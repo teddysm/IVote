@@ -36,13 +36,15 @@ public class Questions {
 		}
 		else
 		{
-			for(int i = 0; i < 2; i++)
+			for(int i = 0; i <= 2; i++)
 			{
 				switch(i)
 				{
 					case 0:
-						question[i] = "1. True";
+						question[i] = title;
 					case 1:
+						question[i] = "1. True";
+					case 2:
 						question[i] = "2. False";
 				}
 			}
