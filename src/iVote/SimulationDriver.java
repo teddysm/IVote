@@ -16,10 +16,10 @@ public class SimulationDriver {
 		greeting();
 		String[] students = new String[10];
 		students = generatingStudents(students);
-		System.out.println("Simulating a multiple-choice question: ");
-		IVoteService test1 = new IVoteService();
-		System.out.println("\nSimulating a single choice question: ");
-		IVoteService test2 = new IVoteService();
+		System.out.println("Simulating a multiple-choice question for CS 356 ");
+		IVoteService test1 = new IVoteService(students, true, "CS 356");
+		System.out.println("\nSimulating a single choice question for CS 356 ");
+		IVoteService test2 = new IVoteService(students, false, "CS 356");
 
 	}
 	

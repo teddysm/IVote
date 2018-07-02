@@ -11,23 +11,25 @@ public class Questions {
 	private boolean questionType;
 	private String question[] = new String[5];
 	
-	public Questions(boolean questionType) {
+	public Questions(boolean questionType, String title) {
 		this.questionType = questionType;
 		if (questionType)
 		{
-			for(int i = 0; i < 5; i++)
+			for(int i = 0; i <= 5; i++)
 			{
 				switch(i)
 				{
 					case 0:
-						question[i] = "A";
+						question[i] = title;
 					case 1:
-						question[i] = "B";
+						question[i] = "A";
 					case 2:
-						question[i] = "C";
+						question[i] = "B";
 					case 3:
-						question[i] = "D";
+						question[i] = "C";
 					case 4:
+						question[i] = "D";
+					case 5:
 						question[i] = "E";
 				}
 			}
