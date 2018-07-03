@@ -27,11 +27,57 @@ public class IVoteService {
 			if(questions[i] != null)
 				System.out.println(questions[i]);
 		}
+		getAnswers(type);
+		stats();
+
 		
-		for (int i = 0; i < students.length; i++)
+
+	}
+	
+	//get answers from students
+	public void getAnswers(boolean type) {
+		if (type)
 		{
-			
-			
+			for (int i = 0; i < students.length; i++)
+			{
+				
+				
+			}
+		}
+		else
+		{
+			for (int i = 0; i < students.length; i++)
+			{
+				
+				
+			}
+		}
+	}
+	
+	// display the answers statistics
+	public void stats() {
+		for (int i = 1; i < questions.length; i++)
+		{
+			switch(i)
+			{
+				case 1:
+					System.out.println(" students chooses A");
+					break;
+				case 2:
+					System.out.println(" students chooses B");
+					break;
+				case 3:
+					System.out.println(" students chooses C");
+					break;
+				case 4:
+					System.out.println(" students chooses D");
+					break;
+				case 5:
+					System.out.println(" students chooses E");
+					break;
+					
+			}
+				
 		}
 	}
 
