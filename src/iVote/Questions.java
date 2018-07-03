@@ -9,9 +9,9 @@ package iVote;
  */
 public class Questions {
 	private boolean questionType;
-	private String question[] = new String[5];
+	private String question[] = new String[6];
 	
-	public Questions(boolean questionType, String title) {
+	public Questions(boolean questionType, String csClass) {
 		this.questionType = questionType;
 		if (questionType)
 		{
@@ -20,7 +20,7 @@ public class Questions {
 				switch(i)
 				{
 					case 0:
-						question[i] = title;
+						question[i] = csClass;
 					case 1:
 						question[i] = "A";
 					case 2:
@@ -41,7 +41,7 @@ public class Questions {
 				switch(i)
 				{
 					case 0:
-						question[i] = title;
+						question[i] = csClass;
 					case 1:
 						question[i] = "1. True";
 					case 2:

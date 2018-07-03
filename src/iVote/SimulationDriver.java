@@ -18,7 +18,6 @@ public class SimulationDriver {
 		IVoteService test1 = new IVoteService(true, "CS 356");
 		System.out.println("\nSimulating a single choice question for CS 356 ");
 		IVoteService test2 = new IVoteService(false, "CS 356");
-
 	}
 	
 
