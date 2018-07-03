@@ -20,17 +20,23 @@ public class Questions {
 				switch(i)
 				{
 					case 0:
-						question[i] = csClass;
+						question[i] = "Question for: " + csClass;
+						break;
 					case 1:
 						question[i] = "A";
+						break;
 					case 2:
 						question[i] = "B";
+						break;
 					case 3:
 						question[i] = "C";
+						break;
 					case 4:
 						question[i] = "D";
+						break;
 					case 5:
 						question[i] = "E";
+						break;
 				}
 			}
 		}
@@ -41,11 +47,14 @@ public class Questions {
 				switch(i)
 				{
 					case 0:
-						question[i] = csClass;
+						question[i] = "Question for: " + csClass;
+						break;
 					case 1:
 						question[i] = "1. True";
+						break;
 					case 2:
 						question[i] = "2. False";
+						break;
 				}
 			}
 		}	
