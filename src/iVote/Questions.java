@@ -1,18 +1,26 @@
-/**
- * 
- */
 package iVote;
 
 /**
  * Thanh T Doan
- *
+ * CS 356
+ * Prof: Yu Sun
+ * Project 1
+ * Questions class constructor receives boolean questionType and title of the CS Class csClass,
+ * then generates possible choices for students to choose
  */
+
 public class Questions {
+	//type of the question, true for multiple choice, false for single choice
 	private boolean questionType;
+	
+	//question array holds the possible choices for students to choose
 	private String question[] = new String[6];
 	
 	public Questions(boolean questionType, String csClass) {
+		//get questionType
 		this.questionType = questionType;
+		
+		//generates choices depends on the type of question
 		if (questionType)
 		{
 			for(int i = 0; i <= 5; i++)
@@ -61,14 +69,7 @@ public class Questions {
 		
 	}
 	
-	public void setType(boolean questionType) {
-		this.questionType = questionType;
-	}
-	
-	public boolean getType() {
-		return this.questionType;
-	}
-	
+	//return the question array
 	public String[] getQuestion() {
 		return this.question;
 	}
