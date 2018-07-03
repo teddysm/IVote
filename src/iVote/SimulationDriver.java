@@ -7,6 +7,7 @@ package iVote;
  * Project 1
  * SimulationDriver class has the main class and simulate the whole process.
  */
+
 public class SimulationDriver {
 	public static void main(String[] args) {
 		//greets the user

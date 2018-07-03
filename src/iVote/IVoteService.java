@@ -30,6 +30,9 @@ public class IVoteService {
 		this.type = type;
 		this.studentsID = studentsID;
 		
+		//reset the tally count
+		resetCount();
+		
 		//create Questions object with given question type and class title
 		Questions question = new Questions(type, csClass);
 		//get the question
@@ -102,6 +105,12 @@ public class IVoteService {
 			}
 		
 		}
+	}
+	
+	//reset the tally count
+	public void resetCount() {
+		for (int i = 0; i < answers.length; i++)
+			answers[i] = 0;
 	}
 
 }
